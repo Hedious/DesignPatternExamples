@@ -6,6 +6,8 @@ import creationalpatterns.factory.ShapeFactory;
 import creationalpatterns.factory.Square;
 import creationalpatterns.factorymethod.BeefBurgerRestaurant;
 import creationalpatterns.factorymethod.Restaurant;
+import creationalpatterns.prototype.Prototype;
+import creationalpatterns.prototype.Student;
 import creationalpatterns.singleton.LoggerSingleton;
 
 public class TestDesign {
@@ -41,5 +43,10 @@ public class TestDesign {
                 .addJob("Developer").addAddress("Yangon").build();
 
         System.out.println("Info" + kyawkyaw);
+
+        Student stuMgMg = new Student("MgMg", 23);
+        System.out.println(stuMgMg);
+        Student stuAungAung = (Student) stuMgMg.clone();
+        System.out.println(stuAungAung);
     }
 }
