@@ -1,4 +1,5 @@
 import creationalpatterns.abstractfactory.*;
+import creationalpatterns.builder.Person;
 import creationalpatterns.factory.Circle;
 import creationalpatterns.factory.Shape;
 import creationalpatterns.factory.ShapeFactory;
@@ -34,5 +35,11 @@ public class TestDesign {
         System.out.println(loggerSingleton.hashCode());
         System.out.println(loggerSingleton1.hashCode());
         loggerSingleton.writeLog("Log");
+
+
+        Person kyawkyaw = new Person.PersonBuilder("Kyaw Kyaw", 23)
+                .addJob("Developer").addAddress("Yangon").build();
+
+        System.out.println("Info" + kyawkyaw);
     }
 }
