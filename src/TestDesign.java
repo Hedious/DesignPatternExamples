@@ -9,6 +9,11 @@ import creationalpatterns.factorymethod.Restaurant;
 import creationalpatterns.prototype.Prototype;
 import creationalpatterns.prototype.Student;
 import creationalpatterns.singleton.LoggerSingleton;
+import objectDesigns.ChoSaint;
+import objectDesigns.HotBeverage;
+import objectDesigns.Tea;
+
+import javax.swing.text.TabableView;
 
 public class TestDesign {
     public static void main(String[] args) {
@@ -48,5 +53,8 @@ public class TestDesign {
         System.out.println(stuMgMg);
         Student stuAungAung = (Student) stuMgMg.clone();
         System.out.println(stuAungAung);
+
+
+
     }
 }
